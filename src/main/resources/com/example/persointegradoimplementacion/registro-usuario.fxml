@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="389.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.RegistroUsuario">
+   <children>
+      <Label text="Registrar un nuevo usuario">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreField" promptText="Nombre completo">
+         <VBox.margin>
+            <Insets bottom="6.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField text="C.C">
+         <VBox.margin>
+            <Insets bottom="6.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="documentoField" promptText="Numero de documento ">
+         <VBox.margin>
+            <Insets bottom="6.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="direccionField" promptText="Direccion">
+         <VBox.margin>
+            <Insets bottom="6.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextField>
+      <DatePicker fx:id="nacimientoField" prefHeight="25.0" prefWidth="372.0" promptText="Fecha de nacimiento" />
+      <Button fx:id="registrarButtom" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Registrar" >
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>
