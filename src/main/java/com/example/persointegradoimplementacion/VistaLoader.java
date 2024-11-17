@@ -14,7 +14,7 @@ public class VistaLoader {
         Platform.runLater(() -> {
             try {
                 // Cargar la vista FXML
-                FXMLLoader loader = new FXMLLoader(VistaLoader.class.getResource("registro-usuario.fxml"));
+                FXMLLoader loader = new FXMLLoader(VistaLoader.class.getResource("Menu.fxml"));
                 Parent root = loader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
