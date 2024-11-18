@@ -1,5 +1,5 @@
 package com.example.persointegradoimplementacion.Clases.Tarjetas;
-
+//CLASE PADRE
 public abstract  class Tarjeta {
     public double saldo ;
     public String idTarjeta;
@@ -24,7 +24,7 @@ public abstract  class Tarjeta {
     public void setIdTarjeta(String idTarjeta) {
         this.idTarjeta = idTarjeta;
     }
-
+//FUNCIONES NO IMPLEMENTADAS
     public void recargartarjeta() {}
     public void consultarSaldo(){}
 }

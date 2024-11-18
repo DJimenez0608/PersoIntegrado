@@ -6,13 +6,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PersonIntegrado {
-    public List<Usuario> usuarios = new ArrayList<>();
+    private static PersonIntegrado instance; // Única instancia de la clase
+    public List<Usuario> usuarios;
 
-    public void agregarUsuario(Usuario usuario) {
-        usuarios.add(usuario);
+    private PersonIntegrado() {
+        usuarios = new ArrayList<>();
     }
 
-    public List<Usuario> getUsuarios() {
-        return usuarios;
+    // FUNCION PARA OBTENER LA INSTANCIA UNICA
+    public static PersonIntegrado getInstance() {
+        if (instance == null) {
+            instance = new PersonIntegrado();
+        }
+        return instance;
+    }
+
+    // FUNCION PARA AGREGAR UN USUARIO
+    public void agregarUsuario(Usuario usuario) {
+        usuarios.add(usuario);
     }
 }

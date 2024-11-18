@@ -19,6 +19,6 @@
          <VBox.margin>
             <Insets bottom="7.0" />
          </VBox.margin></Button>
-      <Button  mnemonicParsing="false" prefHeight="25.0" prefWidth="222.0" text="Consultar Ruta" onAction="#abrirConsultarRuta"/>
+      <Button  mnemonicParsing="false" prefHeight="25.0" prefWidth="222.0" text="Recargar tarjeta" onAction="#abrirConsultarRuta"/>
    </children>
 </VBox>

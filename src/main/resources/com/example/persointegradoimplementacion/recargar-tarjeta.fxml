@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.RecargarTarjetaController">
+   <children>
+      <Label text="Recargar tarjeta ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="15.0" top="6.0" />
+         </VBox.margin></Label>
+      <TextField fx:id="IdtarjetaField" promptText="Id de la tarjeta">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="valorRecargaField" promptText="Ingrese el valor que va a recargar">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="7.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="recargarButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Recargar" onAction="#RecargarTarjeta" >
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>
