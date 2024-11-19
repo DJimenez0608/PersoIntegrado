@@ -1,14 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.persointegradoimplementacion.ConsultarRuta"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.ConsultarInfoRutaController">
+   <children>
+      <Label text="Consultar la información de una ruta">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="15.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="nombreRutaField" promptText="Ingrese el nombre de la ruta">
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="consultarButton" mnemonicParsing="false" text="Consultar" />
+      <Label prefHeight="17.0" prefWidth="348.0" text="Nombre de la ruta:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="nombreInfoRutaField" prefHeight="17.0" prefWidth="345.0" />
+      <Label prefHeight="17.0" prefWidth="346.0" text="Número de ruta:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="numRutaField" prefHeight="17.0" prefWidth="346.0" />
+      <Label prefHeight="17.0" prefWidth="345.0" text="Lugar de salida:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="salidaField" prefHeight="17.0" prefWidth="344.0" />
+      <Label prefHeight="17.0" prefWidth="344.0" text="Lugar de llegada:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="llegadaField" prefHeight="17.0" prefWidth="343.0" />
+      <Label prefHeight="17.0" prefWidth="343.0" text="La ruta es ciclica:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="ciclicaField" prefHeight="17.0" prefWidth="341.0" />
+      <Label prefHeight="17.0" prefWidth="342.0" text="Cantidad de busas:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="cantidadField" prefHeight="17.0" prefWidth="343.0" />
+      <Label prefHeight="17.0" prefWidth="340.0" text="Paradeeros:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="paraderosField" prefHeight="145.0" prefWidth="340.0" />
+      <Button fx:id="volverButton" mnemonicParsing="false" text="Volver al menú" />
+   </children>
+</VBox>

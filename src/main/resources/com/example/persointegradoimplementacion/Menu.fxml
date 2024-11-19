@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="133.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.MenuController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.MenuController">
    <children>
       <Label text="MENÚ">
          <font>
@@ -15,10 +15,20 @@
             <Insets bottom="10.0" />
          </VBox.margin>
       </Label>
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="217.0" text="Registrar nuevo usuario" onAction="#abrirRegistroUsuario">
+      <Button mnemonicParsing="false" onAction="#abrirRegistroUsuario" prefHeight="25.0" prefWidth="217.0" text="Registrar nuevo usuario">
          <VBox.margin>
             <Insets bottom="7.0" />
          </VBox.margin></Button>
-      <Button  mnemonicParsing="false" prefHeight="25.0" prefWidth="222.0" text="Recargar tarjeta" onAction="#abrirConsultarRuta"/>
+      <Button mnemonicParsing="false" onAction="#abrirRecargaTarjeta" prefHeight="25.0" prefWidth="222.0" text="Recargar tarjeta" />
+      <Button mnemonicParsing="false" onAction="#abrirConsultarInfoRuta" prefHeight="25.0" prefWidth="222.0" text="Consultar informacion de una ruta">
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="224.0" text="Asignar un conductor a un bus" onAction="#abrirAsignarConductor">
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+      </Button>
    </children>
 </VBox>
