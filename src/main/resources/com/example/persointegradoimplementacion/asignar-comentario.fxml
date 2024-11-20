@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.AsignarComentario">
+   <children>
+      <Label text="Hacer comentario a una ruta">
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="nombreUsuario" prefHeight="25.0" prefWidth="217.0" promptText="Nombre de usuario">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="7.0" />
+         </VBox.margin></TextField>
+      <TextField fx:id="nombreRuta" promptText="Nombre de la ruta">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="7.0" />
+         </VBox.margin></TextField>
+      <TextField fx:id="calificacion" promptText="Calificacion (de 1 a 5)">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="7.0" />
+         </VBox.margin></TextField>
+      <TextField fx:id="comentario" promptText="Comentario">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="7.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="publicarComentario" onAction= "#hacerComentario" mnemonicParsing ="false" text="Publicar comentario">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>

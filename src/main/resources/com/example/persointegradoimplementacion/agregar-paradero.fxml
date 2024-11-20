@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="173.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.AgregarParadero">
+   <children>
+      <Label alignment="TOP_CENTER" text="Agregar un paradero a una ruta">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="direccionField" prefHeight="25.0" prefWidth="224.0" promptText="Dirección">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets left="20.0" right="10.0" top="7.0" />
+         </VBox.margin></TextField>
+      <TextField fx:id="nomParaderoField" layoutX="30.0" layoutY="76.0" prefHeight="25.0" prefWidth="224.0" promptText="Nombre del paradero">
+         <VBox.margin>
+            <Insets left="20.0" right="10.0" top="7.0" />
+         </VBox.margin></TextField>
+      <TextField fx:id="nombreRutaField" layoutX="30.0" layoutY="108.0" prefHeight="25.0" prefWidth="224.0" promptText="Nombre de la ruta">
+         <VBox.margin>
+            <Insets left="20.0" right="10.0" top="7.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="agregarParaderoButton" mnemonicParsing="false" text="Agregar paradero">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

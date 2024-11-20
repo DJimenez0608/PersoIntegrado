@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.MenuController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persointegradoimplementacion.Controladores.menuController">
    <children>
       <Label text="MENÚ">
          <font>
@@ -25,7 +25,18 @@
             <Insets top="7.0" />
          </VBox.margin>
       </Button>
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="224.0" text="Asignar un conductor a un bus" onAction="#abrirAsignarConductor">
+      <Button mnemonicParsing="false" onAction="#abrirAsignarConductor" prefHeight="25.0" prefWidth="224.0" text="Asignar un conductor a un bus">
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+
+      </Button>
+      <Button fx:id="comentario" mnemonicParsing="false" onAction="#abrirAsignarComentario" prefHeight="25.0" prefWidth="224.0" text="Asignar comentario sobre ruta">
+         <VBox.margin>
+            <Insets top="7.0" />
+         </VBox.margin>
+      </Button>
+      <Button onAction="#abrirAgregarParadero" mnemonicParsing="false" prefHeight="25.0" prefWidth="224.0" text="Agregar un paradero">
          <VBox.margin>
             <Insets top="7.0" />
          </VBox.margin>

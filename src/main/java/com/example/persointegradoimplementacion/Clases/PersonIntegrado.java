@@ -11,8 +11,11 @@ public class PersonIntegrado {
     public List<Usuario> usuarios;
     public List<Ruta> rutas ;
     public List<EmpresasProveedoras> empresasProveedoras;
+    public List<Comentario> comentarios;
+
 
     private PersonIntegrado() {
+        comentarios = new ArrayList<>();
         usuarios = new ArrayList<>();
         rutas = new ArrayList<>(Arrays.asList(
                 new Ruta(
@@ -22,14 +25,14 @@ public class PersonIntegrado {
                         new Paradero("Calle 2", "Paradero F", 10),
                         false,
                         5,
-                        Arrays.asList(
+                        new ArrayList<>(Arrays.asList(  // Cambiar a ArrayList
                                 new Paradero("Calle 1", "Paradero A", 1),
                                 new Paradero("Calle 3", "Paradero B", 2),
                                 new Paradero("Calle 4", "Paradero C", 3),
                                 new Paradero("Calle 5", "Paradero D", 4),
                                 new Paradero("Calle 6", "Paradero E", 5),
                                 new Paradero("Calle 2", "Paradero F", 10)
-                        )
+                        ))
                 ),
                 new Ruta(
                         "Ruta 2",
@@ -38,7 +41,7 @@ public class PersonIntegrado {
                         new Paradero("Calle 2", "Paradero B", 2),
                         true,
                         3,
-                        Arrays.asList(
+                        new ArrayList<>(Arrays.asList(  // Cambiar a ArrayList
                                 new Paradero("Calle 2", "Paradero B", 2),
                                 new Paradero("Calle 3", "Paradero A", 1),
                                 new Paradero("Calle 4", "Paradero C", 3),
@@ -46,9 +49,10 @@ public class PersonIntegrado {
                                 new Paradero("Calle 4", "Paradero E", 5),
                                 new Paradero("Calle 3", "Paradero F", 6),
                                 new Paradero("Calle 2", "Paradero B", 2)
-                        )
+                        ))
                 )
         ));
+
         this.empresasProveedoras = new ArrayList<>(Arrays.asList(
                 new EmpresasProveedoras(
                         "Transporte rapido y confiable",

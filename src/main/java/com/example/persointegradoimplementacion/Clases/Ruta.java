@@ -69,4 +69,12 @@ public class Ruta {
     public void setCantidadBusesAsignados(int cantidadBusesAsignados) {
         this.cantidadBusesAsignados = cantidadBusesAsignados;
     }
+
+    public List<Paradero> getParaderos() {
+        return paraderos;
+    }
+
+    public void setParaderos(List<Paradero> paraderos) {
+        this.paraderos = paraderos;
+    }
 }
